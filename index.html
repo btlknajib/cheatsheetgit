@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Test</title>
+    </head>
+
+    <body>
+     <header id="header1">
+       <img id="cheatsheet" src="cheatsheet.jpg" alt="logo du site" title="logo"/>
+        <div id="searchbar">
+         <span class="text">Que voulez-vous rechercher ?</span>
+          <form action="">
+            <input class="champ" type="text" placeholder="Recherchez..."/>
+            <input class="bouton" type="button" value="OK" />
+          </form>
+        </div>
+        <div id="navbar">
+             <ul id="menu">
+               <li>
+                <a href="Test.html">Accueil</a>
+              </li>
+
+              <li>
+                <a href="csunix.html">Unix </a>
+              </li>
+
+              <li>
+                <a href="cslinux.html">Linux</a>
+              </li>
+
+              <li>
+               <a href="csvim.html">Vim </a>
+              </li>
+
+              <li>
+               <a href="csgit.html">Git & Github</a>
+              </li>
+            </ul>
+       </div>
+     </header>
+     <br>
+     <br>
+     <br>
+     <div class="margegauche">
+       <br>
+     </div>
+     <div class="margegauche2">
+       <br>
+     </div>
+     <section>
+
+      <h2>Configuration</h2>
+
+
+<h4>Identity Name</h4>
+
+<p>$ git config --global user.name "nom"</p>
+
+<h4>Identity Email</h4>
+
+<p>$ git config --global user.email "adresse@email.com"</p>
+
+<h4>Outil de configuration</h4>
+
+<p>$ git config --global</p>
+
+<h4>Liste des globals</h4>
+
+<p>$ git config --list</p>
+
+<h2>Principales commandes</h2>
+
+<h4>Status des fichiers</h4>
+
+<p>$ git status</p>
+
+<h4>Lister les branches</h4>
+
+<p>$ git branch</p>
+
+<h4>Créer une branch</h4>
+
+<p>$ git branch nom_de_ma_branche</p>
+
+<h4>Changer de branche</h4>
+
+<p>$ git checkout nom_de_ma_branch</p>
+
+<h4>Premier commit</h4>
+
+<p>$ git add <br>
+$ git commit - m "initial commit"</p>
+
+<h4>Commit suivant</h4>
+
+<p> git add chemin_vers_mon_fichier<br>
+$ git commit -m "message du commit"</p>
+
+<h4>Annuler le dernier commit et les dernière modifs</h4>
+
+<p>$ git reset --hard mon_commit<br>
+
+<h4>Mettre à jour le dépôt local</h4>
+
+<p>$ git pull</p>
+
+<h4>Envoyer ses commits vers le dépôt distant</h4>
+
+<p>$ git push</p>
+
+<h4>Supprimer un fichier du répertoire de travail et de l'index</h4>
+
+<p>$ git rm nom_du_fichier</p>
+
+<h4>Supprimer un fichier de l'index</h4>
+
+<p>$ git rmg --cached nom_du_fichier</p>
+
+<h4>Diff</h4>
+
+<p>Affiche la différence entre le contenu du dernier commit et celui du répertoire de travail. Cela correspond à ce qui serait commité par git commit -a.<br>
+
+Affiche la différence entre le contenu pointé par A et celui pointé par B.<br>
+
+$ git diff A B</p>
+
+<h4>Log</h4>
+
+<p>$ git log<br>
+# Affiche X derniers commits<br><br>
+$ git log -n X<br>
+# Affiche un ensemble de commits par date</p>
+
+<h4>Représentation de l’historique à partir de HEAD (commit / branche)</h4>
+
+<p>$ git log --oneline --graph --decorate</p>
+
+<h4>Représentation de l’historique à partir d'un fichier (commit / branche)</h4>
+
+<p>$ git log --oneline --graph --decorate nom_du_fichier</p>
+
+<h4>Annuler commits (soft)</h4>
+
+<p>Seul le commit est retiré de Git ; vos fichiers, eux, restent modifiés. Vous pouvez alors à nouveau changer vos fichiers si besoin est et refaire un commit :<br><br>
+$ git reset --soft mon_commit</p>
+
+<h4>Annuler le dernier commit</h4>
+
+<p>$ git reset HEAD^<br><br>
+
+  Pour indiquer à quel commit on souhaite revenir, il existe plusieurs notations :<br><br>
+
+  HEAD : dernier commit ;<br>
+  HEAD^ : avant-dernier commit ;<br>
+  HEAD^^ : avant-avant-dernier commit ;<br>
+  HEAD~2 : avant-avant-dernier commit (notation équivalente) ;<br>
+  d6d98923868578a7f38dea79833b56d0326fcba1 : indique un numéro de commit précis ;</p>
+
+<h4>Annuler commits (hard)</h4>
+
+<p>Si vous voulez annuler votre dernier commit sans modifié tout les changements effectués dans les fichiers:<br><br>
+  git revert --hard</p>
+
+<h4>Annuler les commits et perdre tous les changements</h4>
+
+<p>$ git reset --hard HEAD^</p>
+
+<h4>Annuler les modifications d’un fichier avant un commit</h4>
+
+<p>Si vous avez modifié plusieurs fichiers mais que vous n’avez pas encore envoyé le commit et que vous voulez restaurer un fichier tel qu’il était au dernier commit :<br><br>
+
+$ git checkout nom_du_fichier</p>
+
+<h4>Annuler/Supprimer un fichier avant un commit</h4>
+
+<p>Supposons que vous venez d’ajouter un fichier à Git avec git add et que vous vous apprêtez à le « commiter ». Cependant, vous vous rendez compte que ce fichier est une mauvaise idée et vous voulez annuler votre git add.<br>
+
+Il est possible de retirer un fichier qui avait été ajouté pour être « commité » en procédant comme suit :<br><br>
+
+$ git reset HEAD -- nom_du_fichier_a_supprimer</p>
+
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="info">
+          <div class="fb"><a href="https://www.facebook.com/najib.benidi"><img src="fb.png" width="30px" height="30px"/></a></div>
+          <div class="contact"><a href=""><img src="courier.png" width="30px" height="30px"/></a></div>
+          <div id="copyright">Cheatsheet.html| copyright© 2015 | Propulsé par Riendutout | réalisé par Najib Btlk</div>
+        </div>
+      </div>
+    </footer>
+    </body>
+</html>
