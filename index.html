@@ -5,53 +5,83 @@
         <link rel="stylesheet" href="style.css">
         <title>Test</title>
     </head>
+    <body id="cmd0">
+         <header>
+             <div class="2nd">
+               <div class="header">
+                 <div id="searchbar">
+                   <span class="text">Que voulez-vous rechercher ?</span>
+                   <form action="">
+                     <input class="champ" type="text" placeholder="Recherchez..."/>
+                     <input class="bouton" type="button" value="OK" />
+                   </form>
+                 </div>
+                 <div class="menu" style="width: 0  px;">
+                  <div class="haut">
+                         <a href="#">MENU</a>
+                         <div class="block">
+                           <br>
+                           <br>
+                             <div class="image"><a href="csunix.html"><img src="unix.png" width="55%" height="60%"/></a></div>
+                             <div class="image"><a href="cslinux.html"><img src="linux.png" width="55%" height="60%"/></a></div>
+                             <div class="image"><a href="csvim.html"><img src="vim.png" width="55%" height="60%"/></a></div>
+                             <div class="image"><a href="csgit.html"><img src="git.png" width="55%" height="60%"/></a></div>
+                         </div>
+                   </div>
+                 </div>
+                 <div id="img1">
+                   <a href="#"><img src="cheatsheet.jpg" alt="imagetitre"/></a>
+                 </div>
+               </div>
+               <br>
+               <br>
+               <nav>
+                 <div>
+                 <ul id="menu">
+                   <li>
+                    <a href="http://btlknajib.github.io/accueil/">Accueil</a>
+                  </li>
 
-    <body>
-     <header id="header1">
-       <img id="cheatsheet" src="cheatsheet.jpg" alt="logo du site" title="logo"/>
-        <div id="searchbar">
-         <span class="text">Que voulez-vous rechercher ?</span>
-          <form action="">
-            <input class="champ" type="text" placeholder="Recherchez..."/>
-            <input class="bouton" type="button" value="OK" />
-          </form>
-        </div>
-        <div id="navbar">
-             <ul id="menu">
-               <li>
-                <a href="http://btlknajib.github.io/accueil/">Accueil</a>
-              </li>
+                  <li>
+                    <a href="http://btlknajib.github.io/cheatsheetunix/">Unix </a>
+                  </li>
 
-              <li>
-                <a href="http://btlknajib.github.io/cheatsheetunix/">Unix </a>
-              </li>
+                  <li>
+                    <a href="http://btlknajib.github.io/cheatsheetlinux/">Linux</a>
+                  </li>
 
-              <li>
-                <a href="http://btlknajib.github.io/cheatsheetlinux/">Linux</a>
-              </li>
+                  <li>
+                   <a href="http://btlknajib.github.io/cheatsheetvim/">Vim </a>
+                  </li>
 
-              <li>
-               <a href="http://btlknajib.github.io/cheatsheetvim/">Vim </a>
-              </li>
-
-              <li>
-               <a href="http://btlknajib.github.io/cheatsheetgit/">Git & Github</a>
-              </li>
-            </ul>
+                  <li>
+                   <a href="http://btlknajib.github.io/cheatsheetgit/">Git & Github</a>
+                  </li>
+                </ul>
+                 </div>
+               </nav>
+             <br>
+             <br>
+           </div>
+           </header>
+           <a href="#cmd0"><img class="fleche" src="fleche.png" alt="fleche" width="5%" height="8%"/></a>
+     <br>
+     <br>
+     <br>
+     <div class="body">
+       <div class="raccourcis"><br>
+         <h1>GIT</h1>
+         <br>
+         <br>
+         <ul>
+             <li><a href="#cmd">Configuration.</a></li>
+             <li><a href="#cmd1">Principales Commandes.</a></li><br>
+         </ul>
        </div>
-     </header>
-     <br>
-     <br>
-     <br>
-     <div class="margegauche">
-       <br>
-     </div>
-     <div class="margegauche2">
-       <br>
-     </div>
      <section>
-
-      <h2>Configuration</h2>
+<br>
+<br>
+      <h2 id="cmd">Configuration</h2>
 
 
 <h4>Identity Name</h4>
@@ -70,7 +100,7 @@
 
 <p>$ git config --list</p>
 
-<h2>Principales commandes</h2>
+<h2 id="cmd1">Principales commandes</h2>
 
 <h4>Status des fichiers</h4>
 
@@ -100,7 +130,7 @@ $ git commit -m "message du commit"</p>
 
 <h4>Annuler le dernier commit et les dernière modifs</h4>
 
-<p>$ git reset --hard mon_commit<br>
+<p>$ git reset --hard mon_commit<br></p>
 
 <h4>Mettre à jour le dépôt local</h4>
 
@@ -182,12 +212,13 @@ Il est possible de retirer un fichier qui avait été ajouté pour être « comm
 $ git reset HEAD -- nom_du_fichier_a_supprimer</p>
 
     </section>
+  </div>
     <footer>
       <div class="footer">
         <div class="info">
           <div class="fb"><a href="https://www.facebook.com/najib.benidi"><img src="fb.png" width="30px" height="30px"/></a></div>
           <div class="contact"><a href=""><img src="courier.png" width="30px" height="30px"/></a></div>
-          <div id="copyright">Cheatsheet.html| copyright© 2015 | Propulsé par Riendutout | réalisé par Najib Btlk</div>
+          <div id="copyright">Cheatsheet.html | copyright© 2015 | Propulsé par Riendutout | réalisé par Najib Btlk</div>
         </div>
       </div>
     </footer>
