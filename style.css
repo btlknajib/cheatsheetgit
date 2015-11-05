@@ -1,26 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis);
 
+@media screen  and  (max-width:768px) {
+
+@import url(https://fonts.googleapis.com/css?family=Dosis);
 
 body {
         background: url(tonbouy.jpg) no-repeat fixed;
         font-family: 'Dosis', sans-serif;
         box-align: center;
+        font-size: 62.5%
 }
 
 h3 {
         text-align: center;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 10em;
 }
 
 h1 {
         text-align: center;
+        font-size: 10em;
 }
 
 article p {
         text-align: center;
         padding: 0.5%;
-        font-size: 20px;
+        font-size: 4em;
 }
 
 
@@ -35,7 +39,7 @@ nav ul li {
 
 nav a {
         text-decoration: none;
-        font-size: 25px;
+        font-size: 4.5em;
         font-weight: bold;
         color: black;
         margin: 15px;
@@ -43,9 +47,11 @@ nav a {
 }
 section h2 {
         margin-left: 3%;
+        font-size: 5em;
 }
 section h4 {
         text-align: center;
+        font-size: 5em;
 }
 
 section p {
@@ -54,7 +60,11 @@ section p {
         border-radius: 20px 20px 20px 20px;
         border: 1px solid black;
         padding: 0.8%;
-        font-size: 20px;
+        font-size: 4em;
+}
+
+.raccourcis ul {
+        font
 }
 
 .raccourcis a {
@@ -62,7 +72,7 @@ section p {
         margin: 0 auto;
         color: #aa3939;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 4em;
 
 }
 
@@ -98,7 +108,7 @@ section p {
 }
 
 #searchbar {
-        font-size: 13px;
+        font-size: 2.5em;
         position:relative;
         width:auto;
         height:auto;
@@ -170,7 +180,7 @@ section p {
         font-family: 'Dosis', sans-serif;
         color: black;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 5em;
 }
 
 .menu h3 {
@@ -189,7 +199,10 @@ section p {
         margin-left: 90%;
         background-color: rgba(255, 255, 255, .3 );
         border-radius: 50% 50% 50% 50%;
+        max-width:5%;
+        max-height:8%;
 }
+
 #copyright{
         color: white;
         margin-left: 30%;
@@ -199,3 +212,27 @@ section p {
         font-family: 'Dosis', sans-serif;
         padding-top: 2%;
 }
+
+}
+
+@media screen and (min-width:300px) and  (max-width:200px) {
+
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+
+}
+
+
+
+@media screen and (min-width:300px) and  (max-width:200px){
+
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+
+
+}
+
+
+@media screen and (min-width:300px) and  (max-width:200px)
+
+@import url(https://fonts.googleapis.com/css?family=Dosis);
